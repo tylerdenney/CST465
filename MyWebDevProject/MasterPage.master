@@ -7,16 +7,41 @@
     
     <link rel="stylesheet" type="text/css" href="~/Styles.css" />
 
+    
+
     <asp:ContentPlaceHolder id="head" runat="server">
         <title>Master Title</title>
    
     </asp:ContentPlaceHolder>
 </head>
 <body>
+     
     <form id="form1" runat="server">
+        <div id="sitemapdiv">
+            <asp:SiteMapPath runat="server" ID="uxsitemappath" PathSeparator=">"></asp:SiteMapPath>
+            </br>
+        <asp:SiteMapDataSource runat="server" ID="uxsitemapdatasource" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" />
+            <asp:Menu Orientation="Horizontal" runat="server" ID="uxmenu" DataSourceID="uxsitemapdatasource" StaticEnableDefaultPopOutImage="false" DynamicEnableDefaultPopOutImage="false" StaticPopOutImageUrl="~/images/arrow.png" DynamicPopOutImageUrl="~/images/arrow.png">
+                <DynamicMenuStyle backcolor="LightSkyBlue"
+                                  forecolor="Black"
+                                  borderstyle="Solid"
+                                  BorderWidth="1"
+                                  bordercolor="Black"/>
+                <DynamicSelectedStyle BackColor="red"
+                                    BorderStyle="Solid"
+                                    BorderColor="white"
+                                    BorderWidth="1" />
+                <DynamicHoverStyle BackColor="green"
+                                    BorderStyle="Solid"
+                                    BorderColor="white"
+                                    BorderWidth="1" />
+                
+                
+            </asp:Menu>
+        </div>
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
+           
         </asp:ContentPlaceHolder>
     </div>
     </form>
