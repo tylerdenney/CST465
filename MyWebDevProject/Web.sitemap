@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+
+<siteMap >
+  <siteMapNode title="Home" url="~/Default.aspx">
+    <siteMapNode title="Login" url="~/Login.aspx"></siteMapNode>
+    <siteMapNode title="Register" url="~/Register.aspx"></siteMapNode>
+   
+    <siteMapNode title="About" url="~/About.aspx"></siteMapNode>
+    <siteMapNode title="Tests" url="~/Tests.aspx"></siteMapNode>
+    <siteMapNode title="Forum" url="~/Forum.aspx"></siteMapNode>
+    <siteMapNode title="Account" url="~/Account/Account.aspx">
+      <siteMapNode title="Logout" url="~/Account/Logout.aspx" />
+      <siteMapNode title="Edit Profile" url="~/Account/EditProfile.aspx" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
