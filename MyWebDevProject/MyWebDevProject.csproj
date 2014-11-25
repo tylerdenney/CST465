@@ -71,7 +71,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="Tests.aspx" />
-    <Content Include="Web.sitemap" />
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Account\EditProfile.aspx" />
@@ -140,6 +142,7 @@
     <Compile Include="MasterPage.master.designer.cs">
       <DependentUpon>MasterPage.master</DependentUpon>
     </Compile>
+    <Compile Include="Old_App_Code\ProfilePersistance.cs" />
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
