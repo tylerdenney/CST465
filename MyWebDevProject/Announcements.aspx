@@ -25,6 +25,7 @@
         <HeaderTemplate>
             <table>
                 <tr>
+                    <th>#</th>
                     <th>Title</th>
                     <th>Author</th>
                     <th>Body</th>
@@ -32,7 +33,8 @@
                 </tr>
         </HeaderTemplate>
         <ItemTemplate>
-            <tr>
+               <tr>
+                <td><%#(((RepeaterItem)Container).ItemIndex+1).ToString() %>. </td>
                 <td> <asp:LinkButton runat="server" ID="uxTitleButton" OnClick="TitleButton_Click"><%# Eval("Title") %></asp:LinkButton> </td>
                 <td><%# Eval("Name") %></td>
                 <td><%# Eval("Body") %></td>
