@@ -9,7 +9,7 @@
     <siteMapNode title="Tests" url="~/Tests.aspx"></siteMapNode>
     <siteMapNode title="Forum" url="~/Forum.aspx"></siteMapNode>
     <siteMapNode title="Manage Users" url="~/Admin/ManageUsers.aspx"></siteMapNode>
-
+    <siteMapNode title="Announcements" url="~/Announcements.aspx"></siteMapNode>
     <siteMapNode title="Account" url="~/Account/Account.aspx">
       <siteMapNode title="Logout" url="~/Account/Logout.aspx" />
       <siteMapNode title="Edit Profile" url="~/Account/EditProfile.aspx" />
