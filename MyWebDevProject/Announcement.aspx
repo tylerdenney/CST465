@@ -7,8 +7,22 @@
 
     <asp:FormView ID="uxFormView" runat="server">
         <ItemTemplate>
-            <asp:Label ID="uxTitleLabel" runat="server" AssociatedControlID="uxTitle">Title: </asp:Label>
-            <asp:TextBox ID="uxTitle" runat="server" ReadOnly="true" Text='<%# Bind("Title") %>'></asp:TextBox>
+            <h2>
+            <asp:Label ID="uxTitleLabel" runat="server" Text='<%# Bind("Title") %>' ></asp:Label>
+            </h2>
+            <h3>
+                Date Posted:
+                <asp:Label ID="uxDateLabel" runat="server" Text='<%# Bind("DatePosted") %>' ></asp:Label>
+                </br>By:
+                <asp:Label ID="uxNameLabel" runat="server" Text='<%# Bind("Name") %>' ></asp:Label>
+            </h3>
+           
+           <p >
+              <asp:Label ID="uxBodyLabel" runat="server" Text='<%# Bind("Body") %>'></asp:Label>
+           </p>
         </ItemTemplate>
     </asp:FormView>
+    <asp:GridView ID="uxGridView" runat="server">
+
+    </asp:GridView>
 </asp:Content>

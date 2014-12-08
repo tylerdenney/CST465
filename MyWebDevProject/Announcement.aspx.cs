@@ -16,11 +16,11 @@ namespace MyWebDevProject
             int id = 0;
             string ids = Request.QueryString["id"];
             Int32.TryParse(ids, out id);
-
+            id++;
             SqlCommand command = new SqlCommand();
             command.Connection = new SqlConnection(ConfigurationManager.ConnectionStrings["SqlSecurityDB"].ConnectionString);
             command.CommandType = System.Data.CommandType.Text;
-            command.CommandText = "select Title, Name, Body, Dateposted from announcement join userprofile on announcement.userid = userprofile.userid where id=@id";
+            command.CommandText = "select Title,Body,DatePosted, Name  from announcement join userprofile on announcement.userid = userprofile.userid where id=@id";
             command.Parameters.AddWithValue("@id", id);
 
             try
