@@ -39,6 +39,11 @@
                 
             </asp:Menu>
         </div>
+        <asp:ScriptManager ID="uxScriptManager" runat="server">
+            <Scripts>
+                <asp:ScriptReference Path="~/jquery-1.11.1.min.js" />
+            </Scripts>
+        </asp:ScriptManager>
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
            

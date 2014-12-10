@@ -9,6 +9,7 @@
             <p>You must log in to post new announcements.</p>
         </AnonymousTemplate>
         <LoggedInTemplate>
+            <div class="hidden">
             <p>Currently logged in as <asp:LoginName ID="uxLoginName" runat="server" />.</p>
             <fieldset id="uxFieldSet">
                 <legend>Add New Announcement</legend>
@@ -17,6 +18,7 @@
                 <asp:Label ID="uxBodyLabel" runat="server" AssociatedControlID="uxBody">Body</asp:Label>
                 <asp:TextBox TextMode="MultiLine" ID="uxBody" runat="server" CssClass="formfield"></asp:TextBox>
                 <asp:Button ID="uxsubmit" runat="server" Text="Submit" OnClick="uxsubmit_Click" />
+                </div>
             </fieldset>
         </LoggedInTemplate>
     </asp:LoginView>

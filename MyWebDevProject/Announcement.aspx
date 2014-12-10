@@ -23,6 +23,25 @@
         </ItemTemplate>
     </asp:FormView>
     <asp:GridView ID="uxGridView" runat="server">
-
+     <Columns>
+        
+       <%--  <asp:TemplateField>
+             <ItemTemplate>
+                 <asp:Label ID="uxCommentLabel" runat="server" ></asp:Label>
+             </ItemTemplate>
+         </asp:TemplateField>--%>
+     </Columns>
     </asp:GridView>
+    <asp:LoginView ID="uxLogin" runat="server">
+        <AnonymousTemplate>
+            <asp:Label ID="uxAnonLabel" runat="server" Text="Login to post a comment."></asp:Label>
+        </AnonymousTemplate>
+        <LoggedInTemplate>
+    <div>
+        <asp:Label ID="uxNewComment" AssociatedControlID="uxCommentText" Text="Comment:" runat="server"></asp:Label>
+        <asp:TextBox ID="uxCommentText" runat="server"></asp:TextBox>
+        <asp:Button ID="uxSubmitComment" runat="server" Text="Submit" OnClick="uxSubmitComment_Click" />
+    </div>
+        </LoggedInTemplate>
+        </asp:LoginView>
 </asp:Content>

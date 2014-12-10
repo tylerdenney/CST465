@@ -12,3 +12,8 @@
 {
     vertical-align:top;
 }
+.hidden
+{
+    color:red;
+    display:none;
+}

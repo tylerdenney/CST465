@@ -65,6 +65,7 @@
     <Content Include="Announcements.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Forum.aspx" />
+    <Content Include="jquery-1.11.1.min.js" />
     <Content Include="MasterPage.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
