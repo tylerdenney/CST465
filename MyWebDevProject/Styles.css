@@ -14,6 +14,10 @@
 }
 .hidden
 {
-    color:red;
     display:none;
+  
+}
+.ShowHide
+{
+    cursor:pointer;
 }

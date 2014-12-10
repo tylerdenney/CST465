@@ -5,7 +5,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     
-    <link rel="stylesheet" type="text/css" href="~/Styles.css" />
+    <!--Had to add the ?parameter=1 to get it to update. Any ideas why? -->
+    <link rel="stylesheet" type="text/css" href="~/Styles.css?parameter=1" />
 
     
 

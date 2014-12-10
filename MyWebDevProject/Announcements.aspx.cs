@@ -41,6 +41,7 @@ namespace MyWebDevProject
 
                 command.Connection.Open();
                 command.ExecuteNonQuery();
+                uxAnnouncements.DataBind();
             }
             catch (Exception ex)
             {
@@ -49,6 +50,7 @@ namespace MyWebDevProject
             finally
             {
                 command.Connection.Close();
+
             }
         }
 
